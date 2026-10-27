@@ -1,0 +1,28 @@
+
+{
+  "functions": {
+    "api/index.php": {
+      "runtime": "vercel-php@0.7.4"
+    },
+    "api/20e5kq.php": {
+      "runtime": "vercel-php@0.7.4"
+    }
+  },
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "headers": {
+        "Cache-Control": "public, max-age=86400"
+      },
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/api/gt3qe4.php",
+      "dest": "/api/gt3qe4.php"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.php"
+    }
+  ]
+}
